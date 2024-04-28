@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Recruitment | Employer Form</title>
+
+    <link rel="icon" href="../res/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/forms.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="form-container">
+        <div class="form-header-container" id="footer-logo-container">
+          <img
+            src="../res/grace_recruitment_logo.png"
+            alt="Grace Recruitment Logo"
+            width="80"
+            height="80"
+          />
+          <h2>GRACE RECRUITMENT</h2>
+        </div>
+        <form onsubmit="submitForm(); return false;">
+
+          <h2>Employer Application Form</h2>
+          
+          <section id="detail-section">
+            <legend>Details Of Employer</legend>
+
+            <div id="inner-detail-section">
+              <div class="detail-style" id="details-left">
+                <label for="first-name">Enter Name*</label>
+                <div>
+                  <input class="input-short" type="text" id="first-name" name="first_name" required placeholder="First Name">
+                  <input class="input-short" type="text" name="last_name" required placeholder="Last Name">
+                </div>
+
+                <div class="form-flex">
+                  <label for="email">Enter Business Email*</label>
+                  <input class="input-long" type="email" id="email" name="email_address" required>
+                </div>
+
+                <div class="form-flex-row">
+                  <div>
+                    <label for="title">Title*</label>
+                    <input class="input-short" type="text" id="title" name="title" required placeholder="Title">
+                  </div>
+                  <div>
+                    <label for="job-title">Company Name*</label>
+                    <input class="input-short" type="text" id="job-title" name="job-title" required placeholder="Job Title">
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-style" id="details-right">
+                <label for="dob">Date Of Birth*</label>
+                <input class="input-long" type="date" id="dob" name="date_of_birth" required>
+                
+                <label for="mobile">Company Number*</label>
+                <input class="input-long" type="tel" id="mobile" name="mobile_number" required>
+                
+                <label>Have You Previously Recruited From Grace?*</label>
+                <div>
+                  <input type="checkbox" id="previous_work_yes" name="previous_work" value="yes">
+                  <label for="previous_work_yes">Yes</label>
+                  
+                  <input id="no-check-box" type="checkbox" id="previous_work_no" name="previous_work" value="no">
+                  <label for="previous_work_no">No</label>
+                </div>
+            </div>
+
+          </section>
+          
+          <section id="address-section">
+            <legend>Company Details</legend>
+            <div id="flex-structure">
+              <div class="form-flex">
+                <label for="address">Company Address*</label>
+                <input class="input-long" type="text" id="address" name="home_address" required>
+              </div>
+              
+              <div id="drop-down">
+                <label for="county">County</label>
+                <select id="county" name="county">
+                  <option value="co_carlow">Co. Antrim</option>
+                  <option value="co_carlow">Co. Armagh</option>
+                  <option value="co_carlow">Co. Carlow</option>
+                  <option value="co_cavan">Co. Cavan</option>
+                  <option value="co_clare">Co. Clare</option>
+                  <option value="co_cork">Co. Cork</option>
+                  <option value="co_dublin">Co. Derry</option>
+                  <option value="co_donegal">Co. Donegal</option>
+                  <option value="co_dublin">Co. Down</option>
+                  <option value="co_dublin">Co. Dublin</option>
+                  <option value="co_dublin">Co. Fermanagh</option>
+                  <option value="co_galway">Co. Galway</option>
+                  <option value="co_kerry">Co. Kerry</option>
+                  <option value="co_kildare">Co. Kildare</option>
+                  <option value="co_kilkenny">Co. Kilkenny</option>
+                  <option value="co_laois">Co. Laois</option>
+                  <option value="co_leitrim">Co. Leitrim</option>
+                  <option value="co_limerick">Co. Limerick</option>
+                  <option value="co_longford">Co. Longford</option>
+                  <option value="co_louth">Co. Louth</option>
+                  <option value="co_mayo">Co. Mayo</option>
+                  <option value="co_meath">Co. Meath</option>
+                  <option value="co_monaghan">Co. Monaghan</option>
+                  <option value="co_offaly">Co. Offaly</option>
+                  <option value="co_roscommon">Co. Roscommon</option>
+                  <option value="co_sligo">Co. Sligo</option>
+                  <option value="co_tipperary">Co. Tipperary</option>
+                  <option value="co_waterford">Co. Waterford</option>
+                  <option value="co_westmeath">Co. Westmeath</option>
+                  <option value="co_wexford">Co. Wexford</option>
+                  <option value="co_wicklow">Co. Wicklow</option>
+                </select>
+              </div>
+            </div>
+            
+            <div id="flex-structure">
+              <div class="form-flex-row">
+                <div>
+                  <label for="town">Town*</label>
+                  <input class="input-short" type="text" id="town" name="town" required>
+                </div>
+                <div>
+                  <label for="zipcode">Zip Code*</label>
+                  <input class="input-short" type="text" id="zipcode" name="zip_code" required>
+                </div>
+              </div>
+                            
+              <div class="ownership-container">
+                <label for="ownership">Type of Business*</label>
+                <select id="ownership" name="ownership">
+                  <option value="limited_liability_company">Limited Liability Company</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="sole_trader">Sole Trader</option>
+                </select>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="recruit-container">
+            <legend>Recruit Staff</legend>
+            <div id="chef-boxes-container">
+              <div class="chef-box">
+                <h5>Sous Chef</h5>
+                <select id="sous-chef" name="sous-chef">
+                  <option value="none">None</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="chef-box">
+                <h5>Senior Chef</h5>
+                <select id="Senior-chef" name="Senior-chef">
+                  <option value="none">None</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="chef-box">
+                <h5>Relief Cook</h5>
+                <select id="relief-cook" name="relief-cook">
+                  <option value="none">None</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+              <div class="chef-box">
+                <h5>Prep Cook</h5>
+                <select id="prep-cook" name="prep-cook">
+                  <option value="none">None</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+            </div>
+            <div id="duration-box" class="chef-box">
+              <legend>Recruitment Duration</legend>
+              <select id="duration" name="duration">
+                <option value="none">None</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </section>
+          <section id="recruitment-breakdown">
+            <legend>Recruitment Breakdown</legend>
+            <h5>Total Staff: <span class="total-staff">0</span></h5>
+            <h5>Total Payment: <span class="total-payment">0</span></h5>
+          </section>
+
+          <button
+            id="submit-button"
+            class="default-button default-button-background"
+            type="submit"
+          >
+            Recruit Staff
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-content">
+        <div class="make-flex" id="footer-logo-container">
+          <img
+            src="../res/grace_recruitment_logo.png"
+            alt="Grace Recruitment Logo"
+            width="80"
+            height="80"
+          />
+          <h2>GRACE RECRUITMENT</h2>
+        </div>
+        <div class="footer-list-container">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-list-container">
+          <h5>Services</h5>
+          <ul>
+            <li>
+              <a href="index.html">Placement</a>
+            </li>
+            <li>
+              <a href="index.html">Consultation</a>
+            </li>
+            <li><a href="index.html">Training</a></li>
+            <li>
+              <a href="index.html">Temp Staffing</a>
+            </li>
+          </ul>
+        </div>
+        <div id="footer-socials-container">
+          <div id="socials-content-container">
+            <h5>Get In Touch</h5>
+            <img
+              src="../res/social-media-icons.png"
+              alt="Icons for social media"
+              width="88"
+              height="42"
+            />
+          </div>
+          <div id="newsletter-container">
+            <input id="subscribe-input" type="text" placeholder="Enter Email Address" />
+            <button
+              class="learn-more-btn default-button default-button-background"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="copyright-container">
+        <hr class="white-line" />
+        <p>&copy; 2024 Grace Recruitment Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../scripts/form.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

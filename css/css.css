@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orienta&display=swap");
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#company-details-bar {
+  justify-content: center;
+  background-color: #252525;
+  color: #a7a7a7;
+  height: 2.5rem;
+  border-bottom: #004800 2px solid;
+}
+
+#company-details-bar ul {
+  width: 50%;
+  list-style-type: none;
+}
+
+/* Targeting just the information */
+.detail-item p {
+  padding-left: 0.8rem;
+}
+
+/* Nav Bar */
+
+#header-content-container {
+  padding-top: 0.5rem;
+  position: relative; /* Ensure the pseudo-element positions relative to this container */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 0;
+  transition: background-image 2s ease-in-out; /* Smooth transition for background change */
+}
+
+#header-content-container::before {
+  content: ""; /* Pseudo-elements require the content property to be set */
+  position: absolute;
+  inset: 0; /* Shorthand for top, right, bottom, left */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 50% opacity */
+  z-index: -1; /* Ensure it sits above the background image but below other content */
+}
+
+/* Moving Navbar */
+
+nav {
+  justify-content: space-around !important;
+  padding: 0.3rem 0 0.2rem 0;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+nav.scrolled {
+  transition: background-color 0.6s; /* Smooth transition for background color */
+  background-color: #252525; /* Gray background */
+  position: fixed;
+  top: 0;
+  border-bottom: #004800 2px solid;
+}
+
+nav ul {
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+button {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav button {
+  width: 10rem;
+  height: 3.4rem;
+  font-size: 0.8rem;
+}
+
+/* Header Content */
+
+#header-content {
+  grid-template-columns: 1fr 7fr 1fr;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+  font-size: 4.5rem;
+}
+
+#header-content div {
+  margin: 4rem 0 6.4rem 0;
+  grid-column: 2/3;
+  font-size: 20px;
+  width: 70%;
+  color: white;
+}
+
+#header-content button {
+  margin: 0.5rem 0 0 0;
+  width: 10rem;
+  height: 3.6rem;
+  font-size: 0.9rem;
+}
+
+/* Home page's call to action buttons */
+#home-CTA {
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+}
+
+/* About Section */
+
+#about-section-container {
+  display: grid;
+  grid-template-columns: 1.2fr 3.5fr 3.5fr 1.2fr;
+}
+
+.profile-info {
+  display: flex;
+  margin: 6.5rem 0;
+  flex-direction: column;
+}
+
+.profile-info h2 {
+  font-size: 2.2rem;
+  padding: 1.2rem 0 3rem 0;
+}
+
+.profile-info p {
+  color: rgb(34, 34, 34);
+  padding-bottom: 3.8rem;
+}
+
+#about-section-img-container {
+  grid-column: 2/3;
+}
+
+.learn-more-btn {
+  background-color: black;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+}
+
+.learn-more-btn:hover {
+  background-color: #333333; /* Slightly lighter black for hover effect */
+}
+
+#services-section {
+  background-color: #2f2f2f;
+}
+
+/* Services Section */
+
+#services-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 5rem;
+}
+
+.service-box {
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3abd62;
+  width: 18rem;
+  padding: 1.8em 1rem 2.2rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.inner-service-box {
+  background-color: white;
+  margin: 0 0.5rem;
+  padding: 0.4rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 7px 7px 18px 18px;
+}
+
+.image-container {
+  width: 90px;
+  height: 90px;
+}
+
+/* Contact Section */
+
+#contact-section {
+  grid-template-rows: 1fr 2.5fr;
+}
+
+#contact-header {
+  margin: 3.5rem 0;
+  text-align: center;
+}
+
+#contact-header h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+#inner-contact-content {
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.contact-form-access-container {
+  display: grid;
+  grid-template-rows: 2fr 6fr;
+}
+
+#contact-button-container {
+  width: 27rem;
+  align-items: normal;
+  padding: 3rem 0;
+}
+
+#contact-button-container button {
+  width: 12rem;
+  color: black;
+  border: #acacac solid 1px;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #dddddd;
+}
+
+.contact-access-changable-container {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1; /* Start fully visible */
+  width: 70%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-access-changable-container h5 {
+  font-size: 15px;
+}
+
+#join-our-team-btn {
+  margin-top: 1rem;
+}
+
+/* Team Section */
+
+#team-section {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  padding: 5rem 0 5rem 0;
+  font-family: "Oxygen", sans-serif;
+  height: 50rem;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow the section */
+  background-image: url("../res/profile-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#profile-container {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 5fr 10fr 1fr;
+}
+
+#team-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#team-header h2 {
+  font-size: 3rem;
+}
+
+#team-header h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+#img-profile-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; /* Ensures elements sliding out are not visible outside the container */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.profile {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(241, 241, 241, 0.4);
+  border-radius: 50%; /* Makes the div circular */
+  margin: 0 10px;
+}
+
+.circle:hover {
+  width: 23px;
+  height: 23px;
+  margin: 0 12px;
+  background-color: rgba(241, 241, 241, 0.6);
+}
+
+.black {
+  background-color: black;
+  opacity: 1;
+}
+
+.black:hover {
+  background-color: black;
+}
+
+#join-our-team-profile-btn {
+  background-color: rgba(99, 255, 146, 0.2);
+  border: #252525 solid 1px;
+  color: black;
+  font-size: 1rem;
+}
+
+#join-our-team-profile-btn:hover {
+  background-color: rgba(99, 255, 146, 0.35);
+}
+
+.profile h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.profile h6 {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+/* Testimonial Section */
+
+#testimonials-section {
+  display: flex;
+  justify-content: center;
+  background-color: #3ca95d;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow the section */
+  background-image: url("../res/profile-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#testimonials-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 70%;
+}
+
+#testimonials-header {
+  padding: 6rem 0 4rem 0;
+  text-align: center;
+}
+
+#testimonials-header h2 {
+  font-size: 1.7rem;
+}
+
+#testimonials-header h4 {
+  color: #33834b;
+  padding-bottom: 1rem;
+}
+
+#testimonials-container {
+  padding: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 7rem 0;
+}
+
+.review-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#reviewer-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 1.5rem;
+}
+
+#reviewer-content-container {
+  padding-left: 1rem;
+}
+
+#reviewer-content-container h5 {
+  font-family: "Oxygen", sans-serif;
+  color: #33834b;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  header {
+    font-size: 0.6rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #company-details ul {
+    padding-left: 0;
+    width: 90%; /* More space for smaller screens */
+  }
+
+  .detail-item p {
+    margin-left: 0.2rem; /* Smaller margin for smaller screens */
+  }
+
+  /* Adjust nav for smaller screens if needed */
+
+  #sandwich-menu {
+    display: block !important; /* Show the sandwich menu */
+    /* Additional styling for the sandwich menu as needed */
+  }
+
+  /* Hide the regular navbar items */
+  nav ul,
+  nav button {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav img {
+    justify-self: flex-end;
+    margin: 0.4rem 1.3rem 0 1.3rem;
+  }
+
+  #header-content {
+    grid-template-columns: 1fr 15fr 1fr;
+  }
+
+  #header-content div {
+    width: 100%;
+  }
+}

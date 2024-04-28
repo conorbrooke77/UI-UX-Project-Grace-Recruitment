@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Recruitment</title>
+
+    <link rel="icon" href="../res/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="section-identifier make-flex" id="company-details-bar">
+        <ul class="make-flex">
+          <li class="detail-item make-flex">
+            <img
+              src="../res/email-icon.png"
+              alt="Email Icon"
+              width="19"
+              height="14"
+            />
+            <p>gracerecruitment@gmail.com</p>
+          </li>
+          <li class="detail-item make-flex">
+            <img
+              src="../res/phone-icon.png"
+              alt="Phone Number Icon"
+              width="15"
+              height="16"
+            />
+            <p>0893124576</p>
+          </li>
+          <li class="detail-item make-flex">
+            <img
+              src="../res/address-icon.png"
+              alt="Address Icon"
+              width="15"
+              height="20"
+            />
+            <p>5 Mary St, Durrow, Co. Laois</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="header-content-container">
+        <nav class="make-flex">
+          <img
+            id="logo"
+            src="../res/grace_recruitment_logo.png"
+            alt="Grace Recruitment Logo"
+            width="80"
+            height="75"
+          />
+          <ul class="make-flex">
+            <li><a href="#company-details-bar" class="nav-link">Home</a></li>
+            <li>
+              <a href="#about-section-container" class="nav-link">About</a>
+            </li>
+            <li><a href="#services-section" class="nav-link">Services</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            <li><a href="#team-section" class="nav-link">Our Team</a></li>
+            <li>
+              <a href="#testimonials-section" class="nav-link">Testimonials</a>
+            </li>
+          </ul>
+          <button
+            class="default-button default-button-background"
+            type="button"
+            onclick="scrollToSection('contact-section')"
+          >
+            CONTACT US
+          </button>
+          <div id="sandwich-menu" style="display: none">
+            <!-- Replace with an actual image or icon -->
+            <img src="../res/menu-icon.png" alt="Menu" width="35" height="30" />
+          </div>
+        </nav>
+
+        <section class="make-grid" id="header-content">
+          <div>
+            <h1>
+              Fostering Culinary Excellence & Careers<br />
+              Across Ireland
+            </h1>
+            <p>
+              Grace Recruitment Seamlessly Matches Exceptional Chefs with
+              Leading <br />Irish Restaurants and Hotels.
+            </p>
+
+            <div id="home-CTA">
+              <button
+                class="default-button default-button-background"
+                type="button"
+                onclick="window.location.href='form-employer.html';"
+              >
+                <strong>Looking For Staff</strong>
+              </button>
+              <button
+                class="default-button default-button-background"
+                type="submit"
+                onclick="window.location.href='form-employee.html';"
+              >
+                <strong>Looking For Work</strong>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <article class="section-identifier" id="about-section-container">
+        <div id="about-section-img-container" class="profile-info">
+          <img
+            src="../res/head-chef.jpg"
+            alt="Picture of the Head Chef"
+            width="450"
+            height="540"
+          />
+        </div>
+        <div class="profile-info">
+          <h4 class="small-header">About Company</h4>
+          <h2>
+            Trust Grace Recruitment for <br />
+            Your Chef Staffing Solutions
+          </h2>
+          <p>
+            Our mission at Grace Recruitment is to meticulously match and
+            prepare chefs to surpass our clients' culinary expectations,
+            cultivating a team of passionate and outstanding culinary
+            professionals. We are devoted to fostering an environment where our
+            chefs can thrive and excel in their culinary careers.
+            <br /><br /><br />
+            We are committed to elevating the dining experiences in Ireland's
+            restaurants and hotels through exceptional culinary talent and
+            high-quality food services. As we expand, our focus will remain on
+            linking our clients with the premier chefs, while continually
+            offering significant opportunities for our skilled culinary team
+            members.
+          </p>
+          <div>
+            <button
+              class="learn-more-btn default-button"
+              type="button"
+              onclick="scrollToSection('team-section')"
+            >
+              Meet Our Team
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <section class="section-identifier" id="services-section">
+        <div id="services-container">
+          <div class="service-box make-flex">
+            <div class="image-container">
+              <img
+                src="../res/chef.png"
+                alt="Chef Placement Icon"
+                width="63"
+                height="63"
+              />
+            </div>
+            <div class="inner-service-box">
+              <h3>Chef Placement</h3>
+              <p>
+                We connect great chefs with restaurants and hotels, ensuring a
+                perfect fit for delicious results.
+              </p>
+            </div>
+          </div>
+          <div class="service-box make-flex">
+            <div class="image-container">
+              <img
+                src="../res/consultation-icon.png"
+                alt="Culinary Consultation Icon"
+                width="77"
+                height="77"
+              />
+            </div>
+            <div class="inner-service-box">
+              <h3>Culinary Consultation</h3>
+              <p>
+                Effective advice to enhance your kitchen operations and make
+                your menus more exciting.
+              </p>
+            </div>
+          </div>
+          <div class="service-box make-flex">
+            <div class="image-container">
+              <img
+                src="../res/recruitment-icon.png"
+                alt="Staff Training Icon"
+                width="80"
+                height="80"
+              />
+            </div>
+            <div class="inner-service-box">
+              <h3>Staff Training</h3>
+              <p>
+                Practical training for chefs to refine their skills, embrace new
+                techniques, and grow professionally.
+              </p>
+            </div>
+          </div>
+          <div class="service-box make-flex">
+            <div class="image-container">
+              <img
+                src="../res/training.png"
+                alt="Temporary Staffing Icon"
+                width="56px"
+                height="59px"
+              />
+            </div>
+            <div class="inner-service-box">
+              <h3>Temporary Staffing</h3>
+              <p>
+                Efficiently providing skilled chefs for your immediate needs,
+                keeping your kitchen running without any hitches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-identifier make-grid" id="contact-section">
+        <div id="contact-header">
+          <h4 class="small-header">Contact Us</h4>
+          <h2>Modern Chef Recruitment Agency</h2>
+          <p>
+            Connect with us for clear, effective culinary recruitment solutions
+            <br />and start shaping your kitchen's future today.
+          </p>
+        </div>
+        <div class="make-grid" id="inner-contact-content">
+          <div id="contact-image-container">
+            <img
+              src="../res/contact-recruitment-picture.png"
+              alt="Image Of HR recruiting staff"
+              width="550"
+              height="550"
+            />
+          </div>
+          <div class="contact-form-access-container">
+            <div class="make-flex" id="contact-button-container">
+              <button type="button" class="active-button contact-btn" id="forEmployeesBtn">
+                <strong>
+                  <img
+                    src="../res/employee.png"
+                    alt="Icon"
+                    style="width: 26px; height: 25px; vertical-align: middle"
+                  />
+                  For Employees</strong
+                >
+              </button>
+              <button type="button" class="contact-btn" id="forEmployersBtn">
+                <strong>
+                  <img
+                    src="../res/Employer.png"
+                    alt="Icon"
+                    style="width: 25px; height: 25px; vertical-align: middle"
+                  />For Employers</strong
+                >
+              </button>
+            </div>
+            <div class="contact-access-changable-container">
+              <h5 class="small-header">Find Your Culinary Path at Grace</h5>
+              <h2>Build Your Future With Grace <br />Recruitment</h2>
+              <p>
+                Join Grace Recruitment to access top culinary opportunities in
+                Ireland. Whether you're a chef looking for a new challenge or a
+                venue seeking skilled talent, we're here to connect you with the
+                perfect match. Get in touch to see how we can help shape your
+                culinary future.
+              </p>
+              <div>
+                <button
+                  class="learn-more-btn default-button default-button-background"
+                  id="join-our-team-btn"
+                  type="submit"
+                  onclick="window.location.href='form-employee.html';"
+                >
+                  Join Our Team
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-identifier" id="team-section">
+        <div id="profile-container">
+          <div id="team-header">
+            <div id="profile-header-content">
+              <h4>Meet Our Team</h4>
+              <h2>Seasoned <br />Culinary Professionals</h2>
+            </div>
+            <div class="make-flex" id="profile-btn-container">
+              <button
+                class="learn-more-btn default-button"
+                id="join-our-team-profile-btn"
+                type="button"
+                onclick="window.location.href='form-employee.html';"
+              >
+                Join Our Team
+                <img
+                  src="../res/arrow.png"
+                  alt="Icon"
+                  style="width: 18px; height: 23px; vertical-align: middle"
+                />
+              </button>
+            </div>
+          </div>
+          <div id="img-profile-container">
+            <div class="profile">
+              <img
+                src="../res/declan.jpg"
+                alt="Image Of Executive chef"
+                width="270"
+                height="400"
+              />
+              <h3>Declan Murphy</h3>
+              <h6>Executive Chef</h6>
+            </div>
+            <div class="profile">
+              <img
+                src="../res/sarah.jpg"
+                alt="Image Of Sous chef"
+                width="270"
+                height="400"
+              />
+              <h3>Sarah Keane</h3>
+              <h6>Sous Chef</h6>
+            </div>
+            <div class="profile">
+              <img
+                src="../res/james.jpg"
+                alt="Image Of Culinary Instructor"
+                width="270"
+                height="400"
+              />
+              <h3>James Gallagher</h3>
+              <h6>Culinary Instructor</h6>
+            </div>
+            <div class="profile">
+              <img
+                src="../res/grace.jpg"
+                alt="Image Of Professional Chef"
+                width="270"
+                height="400"
+              />
+              <h3>Grace Kelly</h3>
+              <h6>Professional Chef</h6>
+            </div>
+          </div>
+          <div class="circle-container">
+            <div class="circle" id="circle1"></div>
+            <div class="circle" id="circle2"></div>
+            <div class="circle" id="circle3"></div>
+            <div class="circle black" id="circle4"></div>
+            <div class="circle" id="circle5"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-identifier" id="testimonials-section">
+        `
+        <div>
+          <div id="testimonials-header">
+            <h4>Testimonials</h4>
+            <h2>What Our Clients Say</h2>
+          </div>
+
+          <div id="testimonials-container">
+            <div class="review-row">
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  “Grace Recruitment has transformed our kitchen's dynamics with
+                  top-tier talent. Their ability to match the right chef with
+                  our objectives is unmatched. Every chef has been both skilled
+                  and passionate.”
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Morgan Fitzgerald</h4>
+                    <h5>Executive Chef</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  “Finding skilled chefs has always been a challenge until we
+                  partnered with Grace. Their dedication to understanding our
+                  needs have led to outstanding additions to our team, enhancing
+                  guest satisfaction.”
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Ava O'Reilly</h4>
+                    <h5>Hotel General Manager</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-row hidden">
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-row hidden">
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="review">
+                <img
+                  src="../res/reviews.png"
+                  alt="5 Star Review"
+                  width="95"
+                  height="30"
+                />
+                <p>
+                  ““Grace Recruitment stands out for its exceptional service and
+                  quality of chefs. The professionalism and culinary expertise
+                  of their candidates have truly uplifted our dining
+                  experience.””
+                </p>
+                <div id="reviewer-container">
+                  <img
+                    src="../res/chef-profile-picture.png"
+                    alt="5 Star Review"
+                    width="50"
+                    height="50"
+                  />
+                  <div id="reviewer-content-container">
+                    <h4>Liam Byrne</h4>
+                    <h5>Restaurant Owner</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="btn-container">
+            <button
+              class="learn-more-btn default-button"
+              id="all-reviews-btn"
+              type="button"
+            >
+              All Reviews
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-content">
+        <div class="make-flex" id="footer-logo-container">
+          <img
+            src="../res/grace_recruitment_logo.png"
+            alt="Grace Recruitment Logo"
+            width="80"
+            height="80"
+          />
+          <h2>GRACE RECRUITMENT</h2>
+        </div>
+        <div class="footer-list-container">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#company-details-bar">Home</a></li>
+            <li><a href="#about-section-container">About</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#team-section">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-list-container">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services-section">Placement</a></li>
+            <li><a href="#services-section">Consultation</a></li>
+            <li><a href="#services-section">Training</a></li>
+            <li><a href="#services-section">Temp Staffing</a></li>
+          </ul>
+        </div>
+        <div id="footer-socials-container">
+          <div id="socials-content-container">
+            <h5>Get In Touch</h5>
+            <img
+              src="../res/social-media-icons.png"
+              alt="Icons for social media"
+              width="88"
+              height="42"
+            />
+          </div>
+          <div id="newsletter-container">
+            <input type="text" placeholder="Enter Email Address" />
+            <button
+              class="learn-more-btn default-button default-button-background"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="copyright-container">
+        <hr class="white-line" />
+        <p>&copy; 2024 Grace Recruitment Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/contact-script.js"></script>
+    <script src="../scripts/profile-script.js"></script>
+    <script src="../scripts/testimonial-script.js"></script>
+  </body>
+</html>

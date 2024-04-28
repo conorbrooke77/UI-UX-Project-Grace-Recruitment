@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    padding: 5rem 0 4rem 0;
+    background-color: #3CA95D;
+}
+
+.form-container {
+    padding: 6rem 0 6rem 0;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    background-color: white;
+}
+
+.form-header-container {
+    grid-column: 2/3;
+    text-align: center;
+    height: 11rem;
+}
+
+form {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(90, 90, 90, 0.8); /* x-offset, y-offset, blur-radius, color */
+    padding: 2rem 4rem;
+}
+
+form h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#detail-section {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+input {
+    border: none;
+    background-color: #E9F0F8;
+    padding: 0.8rem;
+    color: #727272;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+}
+
+label {
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2rem 0 1.2rem 0;
+}
+
+#no-check-box {
+    margin-left: 30px;
+}
+
+.input-long {
+    width: 15rem;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-flex-row div {
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-structure {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.input-short {
+    width: 7rem;
+}
+
+.detail-style {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#inner-detail-section {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+#address-section {
+    margin-bottom: 2rem;
+}
+
+#drop-down {
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#drop-down select {
+    width: 9rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #000;
+    background-color: #E9F0F8;
+}
+
+#submit-button {
+    margin: auto;
+    width: 9rem;
+    padding: 1rem 1.5rem;
+    border-radius: 23px;
+}
+
+#subscribe-input {
+    color: #979797;
+    width: 12rem;
+    height: 1.5rem !important;
+    padding-left: 1.2rem;
+    border-radius: 20px;
+}
+
+.qualifications-container {
+    margin-top: 2rem;
+    margin-left: 4rem;
+} 
+
+.qualifications-container label {
+    padding-bottom: 2rem;
+}
+
+textarea {
+    border: none;
+    background-color: #E9F0F8;
+    padding: 0.8rem;
+    color: #B0B0B0;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+.ownership-container {
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#ownership {
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #000;
+    background-color: #E9F0F8;
+
+}
+
+#recruit-container {
+    margin-top: 2rem;
+}
+
+#chef-boxes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.chef-box h5 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.chef-box select {
+    margin: 1.2rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #000;
+    background-color: #E9F0F8;
+}
+
+#recruitment-breakdown {
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+#recruitment-breakdown h5 {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#duration-box {
+    margin-top: 3rem;
+}
+
+legend {
+    font-family: "Oxygen", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}

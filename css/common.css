@@ -1,0 +1,131 @@
+/* Buttons */
+
+.default-button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.default-button-background {
+  background-color: #3ca95d;
+}
+
+.default-button-background:hover {
+  background-color: #61c07d;
+}
+
+/* General */
+
+.active {
+  color: #93e5ac;
+}
+
+.active-button {
+  background-color: white;
+}
+
+.small-header {
+  font-size: 18px;
+  color: #33834b;
+  font-weight: bold;
+}
+
+.make-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.make-grid {
+  display: grid;
+  justify-content: center;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 3.4fr 1fr;
+  height: 24rem;
+  background-color: #252525;
+  padding: 0 15rem;
+}
+
+#footer-content {
+  display: grid;
+  grid-template-columns: 6fr 3fr 3fr 5fr;
+  color: white;
+}
+
+#footer-logo-container {
+  justify-content: start;
+  gap: 2.5rem;
+}
+
+#footer-logo-container h2 {
+  font-family: "Orienta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+  color: #2a9a4c;
+}
+
+.footer-list-container {
+  padding-top: 3rem;
+}
+
+.footer-list-container ul {
+  text-align: left;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.footer-list-container ul li {
+  padding: 0.3rem 0;
+}
+
+.footer-list-container ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #b9b9b9;
+}
+
+#footer-socials-container {
+  padding: 3rem 3rem 3rem 0;
+}
+
+#copyright-container p {
+  padding-top: 2rem;
+  text-align: center;
+  color: #b5b5b5;
+  font-size: 13px;
+}
+
+#newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+#newsletter-container input {
+  color: #979797;
+  width: 12rem;
+  height: 2.5rem;
+  padding-left: 1.2rem;
+  border-radius: 20px;
+}
+
+.slide-out {
+  transform: translateX(-100%); /* Slide out to the left */
+}
+
+.slide-in {
+  transform: translateX(0%); /* Slide in from the right */
+}
+
+.fade-out {
+  opacity: 0 !important; /* Ensure this takes precedence during the fade-out */
+}
+
+.fade-in {
+  opacity: 1;
+}
